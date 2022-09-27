@@ -1,0 +1,212 @@
+/*ESTILOS GERAIS*/
+/*vamos fazer as medias query acima dos 450px de width e acima dos 915px de height*/
+*{
+    /*aqui definimos a cor das fontes*/
+    color: #25282e; 
+    margin:0px;
+    padding: 0px;
+    
+}
+a,i{
+ /*os links e o icones vão ter seus estilo aqui*/
+ transition: 0.5s; /*transição do hover quando passamos o mouse*/
+ text-decoration: none;
+}
+
+/*HEADER*/
+
+#header{
+    padding: 10%;/* espaçamento do header*/
+    border-bottom: 1px solid #ccc ;
+    text-align: center; /*alinhamento tanto de imagem quanto de texto*/
+    background-color: #a0005c;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 5%;
+}
+
+
+/*NAVBAR*/
+#navbar{
+    /*alinhando navbar*/
+    padding: 10px; /*para dar um espaçamento entre os links*/
+    margin: 10px auto; /*altura de 10px e automatico a distancia dos lados*/
+}
+
+#navbar a{
+    color: #444;
+    font-size: 1em;
+    width: 80px;
+    
+}
+/*CARROSSEL*/
+
+#slider{
+    overflow: hidden;
+}
+      
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 22s slider infinite;
+}
+#slider figure img {
+width: 20%;
+float: left;
+}
+      
+@keyframes slider {
+0% {left: 0%;}
+20% {left: 0%;}
+25% {left: -100%;}
+45% {left: -100%;}
+50% {left: -200%;}
+70% {left: -200%;}
+75% {left: -300%;}
+95% {left: -300%;}
+100% {left: -400%}
+}
+
+/*inputs*/
+.input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    outline: unset;
+    border: 3px solid #a0005c;
+    border-radius: 10px;
+}
+.input:focus{
+    background-color:wheat;
+}
+
+.selecionaveis{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#manha, #tarde, #noite{
+    margin: 5px;
+    
+}
+
+#botao{
+    background-color: #198754;
+    color:white;
+    font-size: 1em;
+    border: 3px solid #198754;
+}
+
+label, #titulo-turno{
+    font-size: 1em;
+}
+
+/*footer*/
+.logo_facebook{
+    color:blue
+}
+.logo_instagram{
+    color:rgb(245, 6, 46)
+}
+.logo_twitter{
+    color:rgb(0, 255, 229)
+}
+
+footer{
+    border-top: 1px solid #ccc;
+    height: 250px;
+    padding:30px;
+    margin-top: 50px;
+}
+#icones-redes-sociais div{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    margin: 20px;
+}
+/*CELULAR*/
+@media(max-width:590px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    label, #titulo-turno{
+        font-size: 1.3em;
+    }
+    .input{
+        font-size: 18px;
+        height: 30px;
+    }
+
+    .link-navbar{
+        font-size: 1.2em;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+
+
+}
+@media(max-width:330px){
+
+    h1{
+        font-size: 1.2em;
+    }
+    label, #titulo-turno{
+        font-size: 1em;
+    }
+    #navbar a{
+        color: #444;
+        font-size: 1em;
+        width: 65px;
+        
+    }
+    .link-navbar{
+        
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+}
+
+/*TABLETS*/
+@media(min-width:590px){
+    #navbar a{
+        
+        font-size: 2em;
+        width: 120px;
+        
+    }
+    .link-navbar{
+        
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    label, #titulo-turno{
+        font-size: 2em;
+    }
+    .input{
+        font-size: 30px;
+        height: 50px;
+    }
+    #botao{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 2em;
+    }
+    .botao-radio{
+        width: 25px;
+        height: 25px;
+    }
+
+}
