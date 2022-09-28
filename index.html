@@ -45,6 +45,9 @@
       </div>
      <!--FORMULARIO, colocar o nome da outra pagina na parte de action Exemplo:
       action="Banco.html"-->
+
+
+
      <div>
         <form class="container" action="agradecimento.html" method="get">
         
@@ -52,24 +55,24 @@
          <input type="text" name="nome" id="nome" placeholder="Nome Completo"  class="input" autocomplete="off" required>
         
          <label for="email">Email</label>
-         <input type="email" name="email" placeholder="E-mail"  class="input" autocomplete="off" required>
+         <input type="email" name="email" id="email" placeholder="E-mail"  class="input" autocomplete="off" required>
             
         
-         <label for="cpf_text">CPF</label>
-         <input type="number" name="cpf" placeholder="CPF"  class="input" autocomplete="off" required>
+         <label for="cpf">CPF</label>
+         <input type="number" name="cpf" id="cpf" placeholder="CPF"  class="input" autocomplete="off" required>
         
-         <label for="idade_text">Idade</label>
-         <input type="number" name="idade" placeholder="Idade" min="18" class="input"  autocomplete="off" required>
+         <label for="idade">Idade</label>
+         <input type="number" name="idade" id="idade" placeholder="Idade" min="18" class="input"  autocomplete="off" required>
       
-         <label for="genero_text">Gênero</label>
-         <select name="genero" class="input" required>
+         <label for="genero">Gênero</label>
+         <select name="genero" id="genero" class="input" required>
           <option value="">Seu Gênero</option>
           <option value="Masculino">Masculino</option>
           <option value="Feminino">Feminino</option>
          </select>
     
-         <label for="naturality_text">Naturalidade</label>
-         <select name="naturalidade" class="input" required>
+         <label for="natural">Naturalidade</label>
+         <select name="naturalidade" id="natural" class="input" required>
           <option value="">Seu Estado</option>
           <option value="sp">São Paulo</option>
           <option value="bh">Bahia</option>
@@ -79,11 +82,11 @@
     
         
             
-         <label for="school_document">Historico Escolar </label>
-         <input type="file" name="school" accept="image/png, image/jpeg" class="input" >
+         <label for="school">Historico Escolar </label>
+         <input type="file" name="school" id="school" accept="image/png, image/jpeg" class="input" >
         
-         <label for="curso_select">Cursos</label>
-         <select name="curso"  class="input" required>
+         <label for="curso">Cursos</label>
+         <select name="curso" id="curso" class="input" required>
           <option value="">Selecione seu Curso</option>
           <option value="in">Informatica</option>
           <option value="ps">Psicologia</option>
@@ -97,17 +100,17 @@
          <div  class="selecionaveis">
           <p id="titulo-turno">Turno</p>
     
-          <label for="turno_select">Manhã</label>
+          <label for="manha">Manhã</label>
           <input type="radio" id="manha" name="turno" class="botao-radio" value="MANHA"   required>
-          <label for="turno_select">Tarde</label>
+          <label for="tarde">Tarde</label>
           <input type="radio" id="tarde"  name="turno" class="botao-radio" value="TARDE"  required>
-          <label for="turno_select">Noite</label>
+          <label for="noite">Noite</label>
           <input type="radio" id="noite" name="turno" class="botao-radio" value="NOITE" required>
   
          </div>
         
-         <label for="date_number">Data de Nascimento </label>
-         <input type="date" name="date" class="input" value="" required>
+         <label for="date">Data de Nascimento </label>
+         <input type="date" name="date" id="date" class="input" value="" required>
     
         <input type="submit"  value="Enviar" class="input" id="botao">
       
@@ -140,8 +143,3 @@
     
 </body>
 </html>
-
-
-
-
-
