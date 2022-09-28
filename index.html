@@ -19,13 +19,13 @@
     <!--HEADER-->
     <div class="container-fluid"><!--Corpo do Site-->
      <header class="row" id="header"><!--utilizamos o header porque ele é semantico indicando o cabeçalho da página--> 
-      <p><h1>Centro Universitário Unimetrocamp Wyden</h1></p>
+      <h1>Centro Universitário Unimetrocamp Wyden</h1>
      </header>
 
      <!--NAVBAR-->
      <nav class="container" id="navbar">
         <div class="row justify-content-center link-navbar">
-          <a  href= onclick'alert!'("Esta pagina está temporariamente desligada para ajustes>Home</a>
+          <a  href="#">Home</a>
           <a  href="#">Cursos</a>
           <a  href="#">Contato</a>
         </div>
@@ -35,40 +35,40 @@
       <div id="slider">
       
         <figure>
-          <img src="carrossel_01.jpg">
-          <img src="carrossel_02.jpg">
-          <img src="carrossel_03.jpg">
-          <img src="carrossel_04.jpg">
-          <img src="carrossel_01.jpg">
+          <img src="carrossel_01.jpg" alt="Imagem_01">
+          <img src="carrossel_02.jpg" alt="Imagem_02">
+          <img src="carrossel_03.jpg" alt="Imagem_03">
+          <img src="carrossel_04.jpg" alt="Imagem_04">
+          <img src="carrossel_01.jpg" alt="Imagem_05">
         </figure>
       
       </div>
      <!--FORMULARIO, colocar o nome da outra pagina na parte de action Exemplo:
       action="Banco.html"-->
-     <section>
+     <div>
         <form class="container" action="agradecimento.html" method="get">
         
-         <label for="nome">Nome</label>
+         <label for="name_text">Nome</label>
          <input type="text" name="nome" placeholder="Nome Completo"  class="input" autocomplete="off" required>
         
-         <label for="email">Email</label>
+         <label for="email_text">Email</label>
          <input type="email" name="email" placeholder="E-mail"  class="input" autocomplete="off" required>
             
         
-         <label for="cpf">CPF</label>
+         <label for="cpf_text">CPF</label>
          <input type="number" name="cpf" placeholder="CPF"  class="input" autocomplete="off" required>
         
-         <label for="idade">Idade</label>
+         <label for="idade_text">Idade</label>
          <input type="number" name="idade" placeholder="Idade" min="18" class="input"  autocomplete="off" required>
       
-         <label for="genero">Gênero</label>
+         <label for="genero_text">Gênero</label>
          <select name="genero" class="input" required>
           <option value="">Seu Gênero</option>
           <option value="Masculino">Masculino</option>
           <option value="Feminino">Feminino</option>
          </select>
     
-         <label for="naturalidade">Naturalidade</label>
+         <label for="naturality_text">Naturalidade</label>
          <select name="naturalidade" class="input" required>
           <option value="">Seu Estado</option>
           <option value="sp">São Paulo</option>
@@ -79,10 +79,10 @@
     
         
             
-         <label for="school">Historico Escolar </label>
+         <label for="school_document">Historico Escolar </label>
          <input type="file" name="school" accept="image/png, image/jpeg" class="input" >
         
-         <label for="curso">Cursos</label>
+         <label for="curso_select">Cursos</label>
          <select name="curso"  class="input" required>
           <option value="">Selecione seu Curso</option>
           <option value="in">Informatica</option>
@@ -97,22 +97,22 @@
          <div  class="selecionaveis">
           <p id="titulo-turno">Turno</p>
     
-          <label for="Turno">Manhã</label>
-          <input type="radio" id="manha" name="turno"class="botao-radio" value="MANHA"   required>
-          <label for="turno">Tarde</label>
+          <label for="turno_select">Manhã</label>
+          <input type="radio" id="manha" name="turno" class="botao-radio" value="MANHA"   required>
+          <label for="turno_select">Tarde</label>
           <input type="radio" id="tarde"  name="turno" class="botao-radio" value="TARDE"  required>
-          <label for="turno">Noite</label>
+          <label for="turno_select">Noite</label>
           <input type="radio" id="noite" name="turno" class="botao-radio" value="NOITE" required>
   
          </div>
         
-         <label for="date">Data de Nascimento </label>
+         <label for="date_number">Data de Nascimento </label>
          <input type="date" name="date" class="input" value="" required>
     
         <input type="submit"  value="Enviar" class="input" id="botao">
       
         </form>
-      </section>
+      </div>
 
       <footer class="container">
         <p>Nos encontre nas redes sociais:</p>
