@@ -118,6 +118,9 @@ label, #titulo-turno{
 .logo_twitter{
     color:rgb(0, 255, 229)
 }
+.logo_youtube{
+    color:red
+}
 
 footer{
     border-top: 1px solid #ccc;
