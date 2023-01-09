@@ -1,3 +1,13 @@
+/*Esconder barra de rolagem do number*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
 /*ESTILOS GERAIS*/
 /*vamos fazer as medias query acima dos 450px de width e acima dos 915px de height*/
 *{
